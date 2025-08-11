@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    background-color: #928779;
+}
+
+body {
+    line-height: 1.25;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:where(input, button, textarea, select) {
+    font: inherit;
+    color: inherit;
+}

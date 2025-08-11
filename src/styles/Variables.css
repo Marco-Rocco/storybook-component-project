@@ -1,0 +1,21 @@
+:root {
+
+    /*  Spacing */
+    --spacing-zero: 0;
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    /*  Typography */
+
+
+    /*  Colors */
+
+    --midnight-green: #104547;
+
+    --periwinkle: #B4ADEA;
+
+    --baby-powder: #FDFFF7;
+}
