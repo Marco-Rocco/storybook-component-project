@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/react-vite'
 
 import '../src/styles/Variables.css'
+import '../src/styles/Typography.css'
 import '../src/styles/reset.css'
 
 const preview: Preview = {

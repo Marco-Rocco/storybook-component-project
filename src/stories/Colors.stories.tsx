@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import type { ButtonHTMLAttributes } from "react";
 
 const meta: Meta = {
     title: 'Atoms/Colors',
@@ -11,13 +10,6 @@ const meta: Meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const ClickToCopy: React.FC<({ value: string } & ButtonHTMLAttributes<HTMLButtonElement>)> = ({ value, ...attrs }) => {
-    return <button
-        className="click-to-copy"
-        {...attrs}
-        style={{ border: 'none', cursor: 'pointer', ...attrs.style }}
-        onClick={() => navigator.clipboard.writeText(value)} />
-}
 export const Primary: Story = {
     render: () => (
         <>
@@ -41,35 +33,33 @@ export const Primary: Story = {
             }
             `}
                 </style>
-                <h1>Colors</h1>
-
-                <p>Click on a color to copy the value</p>
+                <h1>Card colors</h1>
                 <h3>Midnight-green</h3>
                 <div className="container green">
-                    <ClickToCopy
+                    <div
                         className="info"
-                        value={`var(--midnight-green)`}
                         style={{ backgroundColor: `var(--midnight-green)` }}
-                    />
+                    >
+                    </div>
                 </div>
 
 
                 <h3>Periwinkle</h3>
                 <div className="container purple">
-                    <ClickToCopy
+                    <div
                         className="info"
-                        value={`var(--periwinkle)`}
                         style={{ backgroundColor: `var(--periwinkle)` }}
-                    />
+                    >
+                    </div>
                 </div>
 
                 <h3>Baby-powder</h3>
                 <div className="container white">
-                    <ClickToCopy
+                    <div
                         className="info"
-                        value={`var(--baby-powder)`}
                         style={{ backgroundColor: `var(--baby-powder)` }}
-                    />
+                    >
+                    </div>
                 </div>
 
 
