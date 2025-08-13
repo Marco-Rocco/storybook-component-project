@@ -9,17 +9,35 @@ const meta: Meta<typeof Card> = {
         layout: 'centered',
     },
     argTypes: {
+        title: {
+            control: 'text',
+            defaultValue: 'Card title'
+        },
+        description: {
+            control: 'text',
+            defaultValue: 'Card description'
+        },
+        imageUrl: {
+            control: 'text',
+            defaultValue: 'src/assets/Custom_70s_Stratocaster,_Dakota_Red_-_Hard_Relic.jpg'
+        },
+        priceVariant: {
+            options: ['hidden', 'normal', 'discounted'],
+            control: { type: 'radio' },
+            defaultValue: 'normal'
+        },
+        price: {
+            control: 'text'
+        },
+        oldPrice: {
+            control: 'text'
+        },
+        newPrice: {
+            control: 'text'
+        },
         hasButton: {
             control: 'boolean'
-        },
-        hasPrice: {
-            control: 'boolean'
-        },
-        priceValue: {
-            control: 'text',
-            defaultValue: '10,99'
-        },
-
+        }
     }
 };
 
@@ -32,13 +50,21 @@ export const Default: Story = {
         title: 'Card title',
         description: 'Card description',
         imageUrl: 'src/assets/Custom_70s_Stratocaster,_Dakota_Red_-_Hard_Relic.jpg',
-        hasPrice: true,
-        hasButton: true,
-        priceValue: '10,99'
+        priceVariant: 'normal',
+        price: '5,500',
+        oldPrice: '6,500',
+        newPrice: '5,000',
+        hasButton: true
     },
     render: (args) => (
         <Card {...args}>
-            {args.hasPrice && <span className="card-price">${args.priceValue}</span>}
+            {args.priceVariant === 'normal' && <span className="card-price">${args.price}</span>}
+            {args.priceVariant === 'discounted' && (
+                <>
+                    <span className="card-old-price">${args.oldPrice}</span>
+                    <span className="card-price">${args.newPrice}</span>
+                </>
+            )}
             {args.hasButton && <button>jo mama</button>}
         </Card>
     )
