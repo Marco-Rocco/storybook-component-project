@@ -20,3 +20,12 @@
     padding: var(--spacing-md);
     color: var(--color-neutral-text);
 }
+
+.children-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-sm);
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--spacing-sm) 0;
+}

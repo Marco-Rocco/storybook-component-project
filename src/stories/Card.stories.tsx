@@ -31,7 +31,7 @@ export const Default: Story = {
     args: {
         title: 'Card title',
         description: 'Card description',
-        imageUrl: 'https://via.placeholder.com/400x200',
+        imageUrl: 'src/assets/Custom_70s_Stratocaster,_Dakota_Red_-_Hard_Relic.jpg',
         hasPrice: true,
         hasButton: true,
         priceValue: '10,99'
