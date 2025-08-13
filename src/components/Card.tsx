@@ -6,7 +6,7 @@ type CardProps = {
     title: string;
     description: string;
     imageUrl: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export const Card: React.FC<CardProps> = ({
