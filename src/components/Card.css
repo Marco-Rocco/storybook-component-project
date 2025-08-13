@@ -38,3 +38,14 @@ button {
     border-radius: var(--spacing-sm);
     cursor: pointer;
 }
+
+.card-old-price {
+    text-decoration: line-through;
+    color: var(--periwinkle);
+}
+
+.prices-container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-sm);
+}

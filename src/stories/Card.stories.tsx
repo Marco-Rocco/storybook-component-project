@@ -61,8 +61,10 @@ export const Default: Story = {
             {args.priceVariant === 'normal' && <span className="card-price">${args.price}</span>}
             {args.priceVariant === 'discounted' && (
                 <>
-                    <span className="card-old-price">${args.oldPrice}</span>
-                    <span className="card-price">${args.newPrice}</span>
+                    <div className="prices-container">
+                        <span className="card-old-price">${args.oldPrice}</span>
+                        <span className="card-new-price">${args.newPrice}</span>
+                    </div>
                 </>
             )}
             {args.hasButton && <button>jo mama</button>}
