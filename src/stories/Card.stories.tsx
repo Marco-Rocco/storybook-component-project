@@ -21,7 +21,7 @@ const meta: Meta<typeof Card> = {
         },
         imageUrl: {
             control: 'text',
-            defaultValue: 'src/assets/Custom_70s_Stratocaster,_Dakota_Red_-_Hard_Relic.jpg'
+            defaultValue: 'src/assets/Fiesta_red_relic.jpg'
         },
         priceVariant: {
             options: ['hidden', 'normal', 'discounted'],
@@ -51,7 +51,7 @@ export const Default: Story = {
     args: {
         title: 'Card title',
         description: 'Card description',
-        imageUrl: 'src/assets/Dafne_blue_relic.jpg',
+        imageUrl: 'src/assets/Fiesta_red_relic.jpg',
         priceVariant: "discounted",
         price: '5,500',
         oldPrice: '6,500',
