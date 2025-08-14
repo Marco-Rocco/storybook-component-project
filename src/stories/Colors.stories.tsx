@@ -44,11 +44,11 @@ export const Primary: Story = {
                 </div>
 
 
-                <h3>Periwinkle</h3>
-                <div className="container purple">
+                <h3>Claret</h3>
+                <div className="container claret">
                     <div
                         className="info"
-                        style={{ backgroundColor: `var(--periwinkle)` }}
+                        style={{ backgroundColor: `var(--claret)` }}
                     >
                     </div>
                 </div>

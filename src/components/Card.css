@@ -34,18 +34,22 @@ button {
     background-color: var(--midnight-green);
     color: var(--baby-powder);
     border: none;
-    padding: var(--spacing-sm) var(--spacing-md);
-    border-radius: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-radius: 50%;
     cursor: pointer;
 }
 
 .card-old-price {
     text-decoration: line-through;
-    color: var(--periwinkle);
+    color: var(--claret);
 }
 
 .prices-container {
     display: flex;
     flex-direction: row;
     gap: var(--spacing-sm);
+}
+
+.cart-icon {
+    color: var(--baby-powder);
 }

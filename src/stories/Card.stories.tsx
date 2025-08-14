@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Card } from "../components/Card";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 
 const meta: Meta<typeof Card> = {
@@ -49,8 +51,8 @@ export const Default: Story = {
     args: {
         title: 'Card title',
         description: 'Card description',
-        imageUrl: 'src/assets/Custom_70s_Stratocaster,_Dakota_Red_-_Hard_Relic.jpg',
-        priceVariant: 'normal',
+        imageUrl: 'src/assets/Dafne_blue_relic.jpg',
+        priceVariant: "discounted",
         price: '5,500',
         oldPrice: '6,500',
         newPrice: '5,000',
@@ -67,7 +69,7 @@ export const Default: Story = {
                     </div>
                 </>
             )}
-            {args.hasButton && <button>jo mama</button>}
+            {args.hasButton && <button><FontAwesomeIcon icon={faCartShopping} className="cart-icon" /></button>}
         </Card>
     )
 };

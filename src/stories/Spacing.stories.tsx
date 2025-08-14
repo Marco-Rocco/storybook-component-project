@@ -60,7 +60,7 @@ const Style: React.FC = () => {
         }
 
         .info{
-        background-color: var(--periwinkle);
+        background-color: var(--claret);
         height: 1ch;
         width: var(--mama);
         display: inline-block;
