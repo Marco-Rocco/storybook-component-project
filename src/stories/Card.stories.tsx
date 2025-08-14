@@ -69,7 +69,7 @@ export const Default: Story = {
                     </div>
                 </>
             )}
-            {args.hasButton && <button><FontAwesomeIcon icon={faCartShopping} className="cart-icon" /></button>}
+            {args.hasButton && <button aria-label="button"><FontAwesomeIcon icon={faCartShopping} className="cart-icon" /></button>}
         </Card>
     )
 };
