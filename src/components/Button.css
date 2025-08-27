@@ -1,0 +1,8 @@
+button {
+    background-color: var(--midnight-green);
+    color: var(--baby-powder);
+    border: none;
+    padding: var(--spacing-md);
+    border-radius: 50%;
+    cursor: pointer;
+}

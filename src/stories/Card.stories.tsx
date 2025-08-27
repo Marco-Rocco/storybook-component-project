@@ -3,6 +3,8 @@ import { Card } from "../components/Card";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
+import { Button } from "../components/Button";
+
 
 const meta: Meta<typeof Card> = {
     title: 'Components/Card',
@@ -69,7 +71,7 @@ export const Default: Story = {
                     </div>
                 </>
             )}
-            {args.hasButton && <button aria-label="button"><FontAwesomeIcon icon={faCartShopping} className="cart-icon" /></button>}
+            {args.hasButton && <Button aria-label="button"><FontAwesomeIcon icon={faCartShopping} className="cart-icon" /></Button>}
         </Card>
     )
 };
