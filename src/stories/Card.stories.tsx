@@ -41,6 +41,10 @@ const meta: Meta<typeof Card> = {
         },
         hasButton: {
             control: 'boolean'
+        },
+        isButtonDisabled: {
+            control: 'boolean',
+            defaultValue: false
         }
     }
 };
@@ -71,7 +75,7 @@ export const Default: Story = {
                     </div>
                 </>
             )}
-            {args.hasButton && <Button aria-label="button"><FontAwesomeIcon icon={faCartShopping} className="cart-icon" /></Button>}
+            {args.hasButton && <Button aria-label="button" onClick={() => console.log('Cart clicked!')} disabled={args.isButtonDisabled}><FontAwesomeIcon icon={faCartShopping} className="cart-icon" /></Button>}
         </Card>
     )
 };

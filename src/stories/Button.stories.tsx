@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { Button } from '../components/Button';
 import React from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const meta: Meta<typeof Button> = {
     title: 'Atoms/Button',
@@ -19,8 +21,8 @@ type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
     args: {
-        children: 'Clicca qui',
-        onClick: () => console.log('Primary Button clicked!'),
+        children: <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />,
+        onClick: () => console.log('Cart clciked!'),
         disabled: false,
     },
 };
@@ -28,7 +30,7 @@ export const Primary: Story = {
 export const Disabled: Story = {
     args: {
         ...Primary.args,
-        children: 'Disabilitato',
+        children: <FontAwesomeIcon icon={faCartShopping} className="cart-icon" />,
         disabled: true,
     },
 };
